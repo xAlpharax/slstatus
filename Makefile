@@ -21,6 +21,7 @@ COM =\
 	components/netspeeds\
 	components/num_files\
 	components/ram\
+	components/vram\
 	components/run_command\
 	components/swap\
 	components/temperature\
