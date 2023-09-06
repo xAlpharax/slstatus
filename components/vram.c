@@ -62,7 +62,7 @@ float GetTotalVRAM() {
     float vram_total = -1.0;
 
     // Check if an NVIDIA card is present
-    command_output = runCommand("nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits");// Returns MiB
+    command_output = runCommand("nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits"); // Returns MiB
     if (command_output != NULL) {
         sscanf(command_output, "%f", &vram_total);
         free(command_output);
@@ -100,7 +100,7 @@ vram_used(const char *unused) {
     int vram_used = (int) GetUsedVRAM();
 
     if (vram_used >= 0.0) {
-        return fmt_human(vram_used * 1024, 1024);
+        return bprintf("%d MiB", vram_used);
     } else {
         return NULL;
     }
@@ -111,7 +111,7 @@ vram_total(const char *unused) {
     int vram_total = (int) GetTotalVRAM();
 
     if (vram_total >= 0.0) {
-        return fmt_human(vram_total * 1024, 1024);
+        return bprintf("%d MiB", vram_total);
     } else {
         return NULL;
     }

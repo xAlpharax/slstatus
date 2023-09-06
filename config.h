@@ -17,7 +17,6 @@ const struct arg args[] = {
   { cpu_freq,           " %sHz",                NULL                                        },
   { ram_perc,           " <%s ram>",            NULL                                        },
   { vram_perc,          " <%s vram>",           NULL                                        },
-  { vram_total,         " <%s vram>",           NULL                                        },
   { disk_perc,          " <%s nvme>",           "/"                                         },
   { disk_perc,          " <%s sata>",           "/home/alphara/exfatssd"                    },
   { wifi_perc,          " <%s wifi>",           "wlp5s0"                                    },
