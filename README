@@ -26,7 +26,7 @@ Features
 - Network speeds (RX and TX)
 - Number of files in a directory (hint: Maildir)
 - Memory status (free memory, percentage, total memory and used memory)
-- GPU Memory status (percentage used)
+- GPU Memory status (percentage used, total amount and used amount of virtual memory)
 - Swap status (free swap, percentage, total swap and used swap)
 - Temperature
 - Uptime

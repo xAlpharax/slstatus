@@ -17,6 +17,7 @@ const struct arg args[] = {
   { cpu_freq,           " %sHz",                NULL                                        },
   { ram_perc,           " <%s ram>",            NULL                                        },
   { vram_perc,          " <%s vram>",           NULL                                        },
+  { vram_total,         " <%s vram>",           NULL                                        },
   { disk_perc,          " <%s nvme>",           "/"                                         },
   { disk_perc,          " <%s sata>",           "/home/alphara/exfatssd"                    },
   { wifi_perc,          " <%s wifi>",           "wlp5s0"                                    },
@@ -58,7 +59,6 @@ const struct arg args[] = {
  * ram_perc            memory usage in percent         NULL
  * ram_total           total memory size in GB         NULL
  * ram_used            used memory in GB               NULL
- * vram_perc           gpu memory usage in percent     NULL
  * run_command         custom shell command            command (echo foo)
  * separator           string to echo                  NULL
  * swap_free           free swap in GB                 NULL
@@ -75,6 +75,11 @@ const struct arg args[] = {
  * username            username of current user        NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD
+ *
+ * vram_perc           gpu memory usage in percent     NULL
+ * vram_total          gpu total memory                NULL
+ * vram_used           gpu used memory                 NULL
+ *
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */

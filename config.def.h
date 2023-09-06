@@ -60,6 +60,11 @@ static const char unknown_str[] = "n/a";
  * username            username of current user        NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD/FreeBSD
+ *
+ * vram_perc           gpu memory usage in percent     NULL
+ * vram_total          gpu total memory                NULL
+ * vram_used           gpu used memory                 NULL
+ *
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */

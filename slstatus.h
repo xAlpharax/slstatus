@@ -52,6 +52,8 @@ const char *num_files(const char *path);
 
 /* vram */
 const char *vram_perc(const char *unused);
+const char *vram_total(const char *unused);
+const char *vram_used(const char *unused);
 
 /* ram */
 const char *ram_free(const char *unused);
