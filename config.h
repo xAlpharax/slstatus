@@ -19,6 +19,8 @@ const struct arg args[] = {
   { vram_perc,          " <%s vram>",           NULL                                        },
   { disk_perc,          " <%s nvme>",           "/"                                         },
   { disk_perc,          " <%s sata>",           "/home/alphara/exfatssd"                    },
+  { disk_perc,          " <%s sata2>",          "/home/alphara/exfatssd2"                   },
+  { disk_perc,          " <%s ntfs>",           "/home/alphara/win"                         },
   { wifi_perc,          " <%s wifi>",           "wlp5s0"                                    },
   { datetime,           " %s ",                 "</%B %d> <%H:%M>"                          },
 };
